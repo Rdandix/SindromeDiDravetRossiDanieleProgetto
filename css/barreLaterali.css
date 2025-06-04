@@ -1,0 +1,174 @@
+/* File: barreLaterali.css - Stili per le barre laterali */
+
+/* Barra laterale sinistra - Contatti */
+.barraContatti
+{
+  position: fixed;
+  left: -180px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+  border-radius: 0 25px 25px 0;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  padding: 25px 15px;
+  z-index: 999;
+  transition: all 0.3s ease;
+  width: 200px;
+}
+
+.barraContatti.aperta
+{
+  left: 0;
+}
+
+.barraContatti:hover
+{
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.pulsanteContatti
+{
+  position: fixed;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(139, 92, 246, 0.9);
+  color: white;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  padding: 15px 8px;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 12px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transition: all 0.3s ease;
+}
+
+.pulsanteContatti:hover
+{
+  background: rgba(139, 92, 246, 1);
+  transform: translateY(-50%) translateX(2px);
+}
+
+.titoloContatti
+{
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  font-weight: 600;
+  color: #8b5cf6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.elementoContatto
+{
+  display: block;
+  background: linear-gradient(135deg, #f8d7da, #fce4ec);
+  color: #6b46c1;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.elementoContatto:hover
+{
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  color: white;
+  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.3);
+}
+
+/* Barra laterale destra - Collegamenti */
+.barraCollegamenti
+{
+  position: fixed;
+  right: -200px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+  border-radius: 25px 0 0 25px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  padding: 25px 15px;
+  z-index: 999;
+  transition: all 0.3s ease;
+  width: 220px;
+}
+
+.barraCollegamenti.aperta
+{
+  right: 0;
+}
+
+.barraCollegamenti:hover
+{
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.pulsanteCollegamenti {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(59, 130, 246, 0.9);
+  color: white;
+  border: none;
+  border-radius: 15px 0 0 15px;
+  padding: 15px 8px;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 12px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transition: all 0.3s ease;
+}
+
+.pulsanteCollegamenti:hover
+{
+  background: rgba(59, 130, 246, 1);
+  transform: translateY(-50%) translateX(-2px);
+}
+
+.titoloCollegamenti
+{
+  font-family: 'Dancing Script', cursive;
+  font-size: 18px;
+  font-weight: 600;
+  color: #3b82f6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.elementoCollegamento
+{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: #374151;
+  transition: all 0.3s ease;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.elementoCollegamento:hover
+{
+  color: #3b82f6;
+  background: rgba(59, 130, 246, 0.1);
+  transform: translateX(-3px);
+}
+
+.nomeCollegamento
+{
+  font-size: 13px;
+  font-weight: 500;
+}

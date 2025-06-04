@@ -1,0 +1,84 @@
+/* File: principale.css - Stili base e layout generale */
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+/* Stili del body con sfondo sfumato più intenso */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg,
+    #e8d5ff 0%,    /* Viola pastello più intenso */
+    #bfdbfe 20%,   /* Azzurro pastello */
+    #ffffff 40%,   /* Bianco */
+    #f0f9ff 60%,   /* Celeste molto chiaro */
+    #fdf2f8 80%,   /* Rosa pastello chiaro */
+    #ddd6fe 100%   /* Lavanda pastello */
+  );
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: #2d3748;
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Overlay decorativo fisso per arricchire lo sfondo */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at top left, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+              radial-gradient(ellipse at bottom right, rgba(236, 72, 153, 0.12) 0%, transparent 50%),
+              radial-gradient(ellipse at center, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Animazioni semplificate */
+@keyframes scintillio
+{
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Contenitore principale con sfondo semi-trasparente */
+.contenitorePrincipale
+{
+  margin: 60px auto;
+  max-width: 800px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  z-index: 10;
+}
+
+
+
+/* Miglioramenti accessibilità */
+@media (prefers-reduced-motion: reduce)
+{
+  *,
+  *::before,
+  *::after
+  {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

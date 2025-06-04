@@ -1,0 +1,104 @@
+/* File: tipografia.css - Stili per testi e titoli */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;600&display=swap');
+
+/* Titolo principale hero */
+.titoloHero
+{
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8em;
+  font-weight: 600;
+  color: #8b5cf6;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.sottotitoloHero
+{
+  font-size: 1.2em;
+  color: #6b7280;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+/* Titoli delle sezioni */
+.titoloSezione
+{
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.2em;
+  font-weight: 600;
+  color: #8b5cf6;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.titoloSezione::after
+{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #8b5cf6, #ec4899);
+  border-radius: 2px;
+}
+
+/* Titolo Aurora speciale */
+.titoloAurora
+{
+  color: #ec4899;
+}
+
+.decorazioneCuore
+{
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 1.2em;
+}
+
+/* Testo del contenuto */
+.testoContenuto
+{
+  font-size: 1.1em;
+  color: #4b5563;
+  line-height: 1.8;
+  position: relative;
+  z-index: 1;
+}
+
+/* Titoli delle carte */
+.titoloCarta
+{
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 15px;
+}
+
+/* Icone delle carte */
+.iconaCarta
+{
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* Footer tipografia */
+.titoloPiePagina
+{
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #8b5cf6;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.testoPiePagina
+{
+  color: #6b7280;
+  font-size: 0.95em;
+  line-height: 1.6;
+  position: relative;
+}

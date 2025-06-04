@@ -1,0 +1,58 @@
+/* File: immagini.css - Stili per le immagini */
+
+/* Stili generali per le immagini */
+.immagineContenuto
+{
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  display: block;
+}
+
+.immagineContenutoA
+{
+  width: 100%;
+  max-width: 575px;
+  height: 500px;
+  margin: 30px auto;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  display: block;
+}
+
+/* Immagini piccole nelle carte */
+.immaginePiccola
+{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.immaginePiccola:hover
+{
+  transform: scale(1.05);
+}
+
+/* Immagini nelle barre laterali */
+.elementoCollegamento img
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  background: white;
+  padding: 3px;
+}
+
+.elementoCollegamento:hover img
+{
+  border-color: #3b82f6;
+  transform: scale(1.05);
+}
+
+

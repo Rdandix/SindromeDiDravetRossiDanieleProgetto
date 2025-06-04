@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="it">
+<!-- Autore : Rossi Daniele -->
+<!-- Classe : 4B inf        -->
+<!-- Data   : 30/05/2025 -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Capolavoro - Sindrome di Dravet</title>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="stile/principale.css">
+  <link rel="stylesheet" href="stile/tipografia.css">
+  <link rel="stylesheet" href="stile/immagini.css">
+  <link rel="stylesheet" href="stile/barreLaterali.css">
+  <link rel="stylesheet" href="stile/sezioni.css">
+
+  <script>
+    function attivaDisattivaContatti()
+    {
+      const barraLaterale = document.querySelector('.barraContatti');
+      barraLaterale.classList.toggle('aperta');
+    }
+
+    function attivaDisattivaCollegamenti()
+    {
+      const barraLaterale = document.querySelector('.barraCollegamenti');
+      barraLaterale.classList.toggle('aperta');
+    }
+
+    // Scorrimento fluido
+    document.addEventListener('DOMContentLoaded', function()
+    {
+      document.querySelectorAll('a[href^="#"]').forEach(collegamento => {
+        collegamento.addEventListener('click', function (e)
+        {
+          e.preventDefault();
+          const elemento = document.querySelector(this.getAttribute('href'));
+          if (elemento)
+          {
+            elemento.scrollIntoView({behavior: 'smooth'});
+          }
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <!-- Pulsanti di attivazione -->
+  <button class="pulsanteContatti" onclick="attivaDisattivaContatti()">CONTATTI</button>
+  <button class="pulsanteCollegamenti" onclick="attivaDisattivaCollegamenti()">LINK</button>
+
+
+
+  <!-- Barra laterale sinistra - Contatti -->
+  <div class="barraContatti">
+    <div class="titoloContatti">Contattaci</div>
+    <a href="tel:+39025516820" class="elementoContatto">📞 +39 02 5516 820</a>
+    <a href="tel:+393453309473" class="elementoContatto">📱 +39 345 3309 473</a>
+    <a href="mailto:info@sindromedidravet.org" class="elementoContatto">✉️ Invia Email</a>
+  </div>
+
+  <!-- Barra laterale destra - Collegamenti -->
+  <div class="barraCollegamenti">
+    <div class="titoloCollegamenti">Partner</div>
+    <a href="https://www.telethon.it" target="_blank" class="elementoCollegamento" aria-label="Telethon">
+      <img src="https://i.imgur.com/ZUAokA7.png" alt="Telethon">
+      <span class="nomeCollegamento">Telethon</span>
+    </a>
+    <a href="https://www.dravet.eu/" target="_blank" class="elementoCollegamento" aria-label="Dravet Europe">
+      <img src="https://i.imgur.com/TxzUZAn.png" alt="Dravet Europe">
+      <span class="nomeCollegamento">Dravet Europe</span>
+    </a>
+    <a href="https://www.fiepilepsy.org/" target="_blank" class="elementoCollegamento" aria-label="FIE Epilessia">
+      <img src="https://i.imgur.com/CT8HVea.png" alt="FIE Epilessia">
+      <span class="nomeCollegamento">FIE Epilessia</span>
+    </a>
+    <a href="https://www.eurordis.org/" target="_blank" class="elementoCollegamento" aria-label="Eurordis">
+      <img src="https://i.imgur.com/F5O9IJC.png" alt="Eurordis">
+      <span class="nomeCollegamento">Eurordis</span>
+    </a>
+  </div>
+
+  <!-- Contenuto principale -->
+  <div class="contenitorePrincipale">
+    <!-- Sezione hero -->
+    <div class="sezioneHero">
+      <h1 class="titoloHero">Sindrome di Dravet</h1>
+      <p class="sottotitoloHero">Insieme per la ricerca, insieme per la speranza</p>
+    </div>
+
+    <!-- Sezione introduzione -->
+    <div class="sezioneContenuto">
+      <img src="https://i.imgur.com/yEC8ssG.jpeg" alt="Cos'è la Sindrome di Dravet" class="immagineContenuto" />
+      <h2 class="titoloSezione">🌟 Cos'è la Sindrome di Dravet?</h2>
+      <p class="testoContenuto">
+        La Sindrome di Dravet è una forma rara e complessa di epilessia che emerge nei primi mesi di vita,
+        come un temporale improvviso in un cielo sereno. Causata prevalentemente da mutazioni del gene SCN1A,
+        questa condizione neurologica si manifesta attraverso crisi epilettiche frequenti e imprevedibili,
+        accompagnate da sfide nello sviluppo cognitivo e motorio.
+      </p>
+      <p class="testoContenuto">
+        Ogni bambino con Sindrome di Dravet è unico, con il proprio percorso di crescita e le proprie
+        piccole vittorie quotidiane che illuminano il cammino delle famiglie.
+      </p>
+    </div>
+
+    <!-- Sezione sintomi -->
+    <div class="carteInformazioni">
+      <div class="cartaInformazione">
+        <span class="iconaCarta">🧠</span>
+        <h3 class="titoloCarta">Sintomi Neurologici</h3>
+        <p class="testoContenuto">
+          Crisi convulsive febbrili, epilessia farmaco-resistente e sensibilità particolare
+          agli stimoli luminosi e termici che possono scatenare episodi critici.
+        </p>
+      </div>
+      <div class="cartaInformazione">
+        <span class="iconaCarta">🗣️</span>
+        <h3 class="titoloCarta">Sviluppo del Linguaggio</h3>
+        <p class="testoContenuto">
+          Ritardi nell'acquisizione del linguaggio che richiedono supporto specialistico
+          e terapie mirate per favorire la comunicazione.
+        </p>
+      </div>
+      <div class="cartaInformazione">
+        <span class="iconaCarta">⚖️</span>
+        <h3 class="titoloCarta">Equilibrio e Motricità</h3>
+        <p class="testoContenuto">
+          Difficoltà nell'equilibrio e nella coordinazione motoria che influenzano
+          le attività quotidiane e il movimento autonomo.
+        </p>
+      </div>
+      <div class="cartaInformazione">
+        <span class="iconaCarta">🌪️</span>
+        <h3 class="titoloCarta">La Vita in Bilico</h3>
+        <p class="testoContenuto">
+          Ogni giorno diventa una sfida: il sole troppo forte, un semplice raffreddore,
+          o anche solo l'eccitazione di una festa possono scatenare crisi improvvise.
+          Le famiglie imparano a vivere con una costante attenzione, trasformando
+          gesti quotidiani in atti di protezione e amore infinito.
+        </p>
+      </div>
+    </div>
+
+    <!-- Sezione storia di Aurora -->
+    <div class="sezioneContenuto sezioneAurora">
+      <img src="https://i.imgur.com/esZmvPj.jpeg" alt="Foto di Aurora" class="immagineContenutoA" />
+      <h2 class="titoloSezione titoloAurora">
+        La storia di Aurora <span class="decorazioneCuore">💜</span>
+      </h2>
+      <div class="testoContenuto">
+        <p>
+          Aurora ha 3 anni e ha avuto la prima crisi epilettica a soli 4 mesi.
+          Da quel giorno è iniziata la sua convivenza con una malattia imprevedibile,
+          la sindrome di Dravet, una grave forma di encefalopatia epilettica, nel suo caso farmacoresistente,
+          che comporta crisi frequenti ed intense.
+          Per lei, nonni e zii hanno deciso di assumere il ruolo collettivo di ca-regiver,
+          termine con cui si indica chi si prende cura quotidianamente delle persone con disabilità.
+          Aurora rimane una piccola guerriera che ogni giorno ci insegna il significato del coraggio.
+          La sua storia è fatta di piccoli traguardi che diventano grandi vittorie, per lei e per la sua famiglia,
+          che non si arrendono mai e che la circondano d'amore,
+          anche se lei non può parlare, risponde con dei grandi sorrisi e occhi pieni di felicità
+          che illuminano anche i momenti più difficili.
+        </p>
+        <br>
+        <p>
+          Attraverso alti e bassi, Aurora continua a crescere e a sorprenderci,
+          ricordandoci che ogni progresso, per quanto piccolo possa sembrare,
+          è in realtà un passo gigantesco verso un futuro più luminoso.
+        </p>
+      </div>
+    </div>
+
+     <!-- Sezione 4 immagini piccole -->
+    <div class="carteImmagini">
+      <div class="cartaImmagine">
+        <img src="https://i.imgur.com/YaPDeCm.jpeg" alt="Immagine 1" class="immaginePiccola" />
+      </div>
+      <div class="cartaImmagine">
+        <img src="https://i.imgur.com/n9ugBdS.jpeg" alt="Immagine 2" class="immaginePiccola" />
+      </div>
+      <div class="cartaImmagine">
+        <img src="https://i.imgur.com/0c4Tkm0.jpeg" alt="Immagine 3" class="immaginePiccola" />
+      </div>
+      <div class="cartaImmagine">
+        <img src="https://i.imgur.com/rwwMRP0.jpeg" alt="Immagine 4" class="immaginePiccola" />
+      </div>
+    </div>
+
+    <!-- Sezione tecnologia -->
+    <div class="sezioneContenuto">
+      <h2 class="titoloSezione">💻 L'informatica al servizio dell'inclusione</h2>
+      <img src="https://i.imgur.com/rjwbYMf.png" alt="Informatica e Dravet" class="immagineContenuto" />
+      <p class="testoContenuto">
+        Nel mondo digitale di oggi, l'informatica può diventare un prezioso alleato per le persone
+        con epilessia. Attraverso design consapevoli e tecnologie inclusive, possiamo creare
+        ambienti digitali più sicuri e accessibili.
+      </p>
+      <p class="testoContenuto">
+        Le linee guida WCAG (Web Content Accessibility Guidelines) ci guidano nella progettazione
+        di contenuti web che evitano flash dannosi, luci lampeggianti e combinazioni di colori
+        potenzialmente pericolose. Ogni sito web, ogni applicazione può diventare uno spazio
+        sicuro e accogliente per tutti.
+      </p>
+      <p class="testoContenuto">
+        L'innovazione tecnologica, quando orientata verso l'inclusione, ha il potere di abbattere
+        barriere e creare opportunità, trasformando sfide in possibilità di crescita e connessione.
+      </p>
+    </div>
+
+    <!-- Banner finale -->
+    <img src="https://i.imgur.com/G58a5eo.jpeg" alt="Banner finale" class="immagineContenuto" />
+
+    <!-- Footer -->
+    <div class="piePagina">
+      <h3 class="titoloPiePagina">Gruppo Famiglie Dravet APS</h3>
+      <p class="testoPiePagina">
+        <strong>📍 Via Fontana, 11, 20122 Milano (MI)</strong><br>
+        CF: 97641730151<br><br>
+        Associazione iscritta al RUNTS – RG n. 10668/2023 del 18/12/2023<br>
+        Repertorio n. 126573<br><br>
+        <em>Insieme possiamo fare la differenza. Ogni gesto, ogni donazione,
+        ogni momento di condivisione contribuisce a costruire un futuro migliore
+        per tutti i bambini e le famiglie che affrontano la Sindrome di Dravet.</em>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
